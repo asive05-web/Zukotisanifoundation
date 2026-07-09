@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zuko Tisani Youth Leadership Foundation — Fund Bold Young Futures</title>
+<meta name="description" content="The Zuko Tisani Youth Leadership Foundation backs young South Africans building the schools, teams, businesses and communities they wish existed. Donate, submit a project or claim your Section 18A certificate.">
+<meta name="keywords" content="Zuko Tisani, youth foundation South Africa, youth leadership, donate South Africa, Section 18A, youth grants, non-profit South Africa, community funding">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* HERO SECTION STYLES */
+.hero-home { 
+  position: relative; 
+  min-height: 600px; 
+  display: flex; 
+  align-items: center; 
+  color: white; 
+  overflow: hidden; 
+  background: #000;
+}
+.hero-home-media { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: 0;
+  opacity: 0.7;
+}
+.hero-home-overlay { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0,0,0,0.5); 
+  z-index: 1; 
+}
+.hero-home-content { 
+  position: relative; 
+  z-index: 2; 
+}
+
+/* PROJECT CARD IMAGES */
+.project-card-media {
+  position: relative;
+  overflow: hidden;
+}
+.project-card-img { 
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover;
+  display: block;
+}
+.project-card-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.95);
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 2;
+}
+</style>
+</head>
+<body class="page-body">
+
+<nav class="main-nav">
+  <div class="container-fluid nav-inner d-flex align-items-center justify-content-between">
+    <a href="index.html" class="brand-link d-flex align-items-center gap-2 text-decoration-none">
+      <span class="brand-mark">ZT</span>
+      <span class="brand-name">Zuko Tisani Youth<br>Leadership Foundation</span>
+    </a>
+    <ul class="nav-links d-none d-lg-flex align-items-center list-unstyled mb-0">
+      <li><a href="about.html" class="nav-link-item">About</a></li>
+      <li><a href="index.html#funded_section" class="nav-link-item">Funded</a></li>
+      <li><a href="index.html#to_fund_section" class="nav-link-item">To Fund</a></li>
+      <li><a href="media.html" class="nav-link-item">Media</a></li>
+    </ul>
+    <div class="d-flex align-items-center gap-3">
+      <a href="donate.html" class="btn-solid-orange d-none d-sm-inline-flex">Donate</a>
+      <button type="button" id="nav_toggle_btn" class="nav-toggle-btn d-lg-none" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile_nav_panel" class="mobile-nav-panel">
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="index.html#funded_section" class="mobile-nav-link">Funded</a>
+    <a href="index.html#to_fund_section" class="mobile-nav-link">To Fund</a>
+    <a href="media.html" class="mobile-nav-link">Media</a>
+    <a href="donate.html" class="mobile-nav-link">Donate</a>
+  </div>
+</nav>
+
+<header class="hero-home">
+  <img src="https://images.unsplash.com/photo-1529390003868-6c640a9376c6?q=80&w=2070&auto=format&fit=crop" 
+       alt="Young South African leaders supported by the foundation" 
+       class="hero-home-media"
+       onerror="this.style.display='none'">
+  <div class="hero-home-overlay"></div>
+  <div class="hero-home-content container">
+    <p class="eyebrow-label eyebrow-label-light">A South African Non-Profit &middot; Est. 2024</p>
+    <h1 class="display-heading hero-home-title">Fund <span class="text-accent">bold</span><br>young <span class="fst-italic text-cream">futures.</span></h1>
+    <p class="hero-home-sub">The Zuko Tisani Youth Leadership Foundation backs young South Africans building the schools, teams, businesses and communities they wish existed.</p>
+    <div class="hero-cta-row">
+      <a href="donate.html" class="btn-solid-orange">Donate Now</a>
+      <a href="submit-project.html" class="btn-outline-cream">Submit a Project</a>
+      <a href="tax-certificate.html" class="btn-outline-cream">Claim Tax Certificate</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Education <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Leadership <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Mentorship <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Sport <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Enterprise <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Community <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Education <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Leadership <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Mentorship <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Sport <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Enterprise <span class="marquee-dot">&#9670;</span></span>
+    <span class="marquee-item">Community <span class="marquee-dot">&#9670;</span></span>
+  </div>
+</div>
+
+<section class="section-block">
+  <div class="section-container row gy-4">
+    <div class="col-lg-5">
+      <p class="eyebrow-label">01 — Who We Are</p>
+      <h2 class="display-heading section-title">We fund what changes the odds.</h2>
+      <a href="about.html" class="btn-outline-dark mt-4 d-inline-flex">Read Our Mandate</a>
+    </div>
+    <div class="col-lg-7">
+      <p class="body-copy mb-3">The Zuko Tisani Youth Leadership Foundation removes the financial barriers that stop capable young South Africans from starting, competing, working, and representing their country.</p>
+      <p class="body-copy mb-4">We fund specific, once-off gateways into opportunity — registrations, small business assets, sporting kit, travel to events, and rare special-case aid — paid directly to the institution or supplier.</p>
+      <div class="stat-grid-panel row g-0">
+        <div class="col-12 col-sm-4 stat-cell">
+          <div class="display-heading stat-number">R1.9M</div>
+          <div class="stat-label">Granted since 2024</div>
+        </div>
+        <div class="col-12 col-sm-4 stat-cell">
+          <div class="display-heading stat-number">14</div>
+          <div class="stat-label">Projects funded</div>
+        </div>
+        <div class="col-12 col-sm-4 stat-cell stat-cell-last">
+          <div class="display-heading stat-number">2,300+</div>
+          <div class="stat-label">Young people reached</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funded_section" class="section-block section-block-alt">
+  <div class="section-container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+      <div>
+        <p class="eyebrow-label">02 — What We've Funded</p>
+        <h2 class="display-heading section-title">Already in motion.</h2>
+      </div>
+      <p class="body-copy mb-0 section-intro-note">Every project below has been fully funded and is live. Scroll through to see where your rand has gone.</p>
+    </div>
+    <div class="carousel-block">
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" 
+                     alt="Learner working on a laptop through the Digital Skills Bursary" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=Digital+Skills+Bursary'">
+                <span class="project-card-tag">Education</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">Eastern Cape</span>
+                <h3 class="project-card-title">Digital Skills Bursary</h3>
+                <p class="project-card-desc">Twelve high-school learners placed on year-long coding and design fellowships with laptops, data, and mentors.</p>
+                <span class="project-card-amount">R 420,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="assets/images/1000046817.jpg" 
+                     alt="Young footballers training at the Township Football Academy" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=Township+Football+Academy'">
+                <span class="project-card-tag">Sport</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">Khayelitsha, Cape Town</span>
+                <h3 class="project-card-title">Township Football Academy</h3>
+                <p class="project-card-desc">Refurbished pitch, kit and coach stipends for 80 under-16 players from three local schools.</p>
+                <span class="project-card-amount">R 185,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" 
+                     alt="Mentorship circle for the Young Women Rising programme" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=Young+Women+Rising'">
+                <span class="project-card-tag">Leadership</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">Johannesburg</span>
+                <h3 class="project-card-title">Young Women Rising</h3>
+                <p class="project-card-desc">A 6-month mentorship circle pairing 30 matric girls with senior professionals across finance, law and the arts.</p>
+                <span class="project-card-amount">R 310,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-nav-row">
+        <button type="button" class="card-nav-btn carousel-prev-btn" aria-label="Previous projects">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="card-nav-btn carousel-next-btn" aria-label="Next projects">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="to_fund_section" class="section-block">
+  <div class="section-container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+      <div>
+        <p class="eyebrow-label">03 — Projects To Fund</p>
+        <h2 class="display-heading section-title">Open for <span class="text-accent">backers.</span></h2>
+      </div>
+      <a href="donate.html" class="btn-solid-dark">Fund One Now</a>
+    </div>
+    <div class="carousel-block">
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="assets/images/1000046819.jpg" 
+                     alt="Rural school targeted for the Water and Solar project" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=Rural+School+Water+Solar'">
+                <span class="project-card-tag">Infrastructure</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">Lusikisiki</span>
+                <h3 class="project-card-title">Rural School Water &amp; Solar</h3>
+                <p class="project-card-desc">Bring reliable solar power and safe drinking water to a 400-learner primary school off the main grid.</p>
+                <span class="project-card-goal">R 640,000 Goal</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" 
+                     alt="Young developer working on the Youth Code Incubator" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=Youth+Code+Incubator'">
+                <span class="project-card-tag">Tech</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">Gqeberha</span>
+                <h3 class="project-card-title">Youth Code Incubator</h3>
+                <p class="project-card-desc">Launch a 12-month full-stack developer bootcamp for 25 unemployed youth, with job placement partners.</p>
+                <span class="project-card-goal">R 890,000 Goal</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="project-card">
+              <div class="project-card-media">
+                <img src="assets/images/1000046818.jpg" 
+                     alt="Learners planting seedlings for the School Garden Network" 
+                     class="project-card-img"
+                     onerror="this.src='https://via.placeholder.com/800x250/1a1a1a/d97706?text=School+Garden+Network'">
+                <span class="project-card-tag">Food Security</span>
+              </div>
+              <div class="project-card-body">
+                <span class="project-card-location">KwaZulu-Natal</span>
+                <h3 class="project-card-title">School Garden Network</h3>
+                <p class="project-card-desc">Fund tools, seeds and training to establish ten school-run vegetable gardens feeding 2,000 learners.</p>
+                <span class="project-card-goal">R 275,000 Goal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-nav-row">
+        <button type="button" class="card-nav-btn carousel-prev-btn" aria-label="Previous projects">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="card-nav-btn carousel-next-btn" aria-label="Next projects">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="triband-cta">
+  <div class="row g-0">
+    <div class="col-md-4 triband-cell triband-cell-bordered">
+      <span class="triband-kicker">Give</span>
+      <h3 class="triband-title">Donate Now</h3>
+      <p class="triband-copy">Once-off or monthly. Section 18A certificates issued.</p>
+      <a href="donate.html" class="triband-arrow-link">&#8599;</a>
+    </div>
+    <div class="col-md-4 triband-cell triband-cell-bordered">
+      <span class="triband-kicker">Apply</span>
+      <h3 class="triband-title">Submit a Project</h3>
+      <p class="triband-copy">If you're 30 or under and building something real, we want to hear from you.</p>
+      <a href="submit-project.html" class="triband-arrow-link">&#8599;</a>
+    </div>
+    <div class="col-md-4 triband-cell">
+      <span class="triband-kicker">Reclaim</span>
+      <h3 class="triband-title">Claim Tax Certificate</h3>
+      <p class="triband-copy">Existing donors — request or re-download your 18A certificate.</p>
+      <a href="tax-certificate.html" class="triband-arrow-link">&#8599;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top row gy-4">
+    <div class="col-lg-5">
+      <h2 class="display-heading footer-heading">Back the <span class="text-accent">next</span><br>generation.</h2>
+      <p class="footer-text">The Zuko Tisani Youth Leadership Foundation is a registered non-profit investing in young South African changemakers.</p>
+    </div>
+    <div class="col-lg-3 offset-lg-1">
+      <p class="footer-label">Get Involved</p>
+      <ul class="footer-links list-unstyled">
+        <li><a href="donate.html" class="footer-link">Donate Now</a></li>
+        <li><a href="submit-project.html" class="footer-link">Submit a Project</a></li>
+        <li><a href="tax-certificate.html" class="footer-link">Claim Tax Certificate</a></li>
+        <li><a href="media.html" class="footer-link">Media</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <p class="footer-label">Contact</p>
+      <ul class="footer-links list-unstyled">
+        <li class="footer-link">hello@ztisaniyouth.org</li>
+        <li class="footer-link">www.ztisaniyouth.org</li>
+        <li class="footer-link">NPO Reg. Pending</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container d-flex justify-content-between flex-wrap">
+    <span>&copy; 2026 Zuko Tisani Youth Leadership Foundation. All rights reserved.</span>
+    <span>Section 18A registered &middot; PBO</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

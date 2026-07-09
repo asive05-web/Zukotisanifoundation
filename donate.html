@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Zuko Tisani Youth Leadership Foundation</title>
+<meta name="description" content="Donate to the Zuko Tisani Youth Leadership Foundation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.hero-dark-section { position: relative; min-height: 300px; display: flex; align-items: center; color: white; overflow: hidden; }
+.hero-dark-media { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero-dark-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: -1; }
+.section-container { position: relative; z-index: 1; }
+</style>
+</head>
+<body class="page-body">
+
+<nav class="main-nav">
+  <div class="container-fluid nav-inner d-flex align-items-center justify-content-between">
+    <a href="index.html" class="brand-link d-flex align-items-center gap-2 text-decoration-none">
+      <span class="brand-mark">ZT</span>
+      <span class="brand-name">Zuko Tisani Youth<br>Leadership Foundation</span>
+    </a>
+    <ul class="nav-links d-none d-lg-flex align-items-center list-unstyled mb-0">
+      <li><a href="about.html" class="nav-link-item">About</a></li>
+      <li><a href="index.html#funded_section" class="nav-link-item">Funded</a></li>
+      <li><a href="index.html#to_fund_section" class="nav-link-item">To Fund</a></li>
+      <li><a href="media.html" class="nav-link-item">Media</a></li>
+    </ul>
+    <div class="d-flex align-items-center gap-3">
+      <a href="donate.html" class="btn-solid-orange d-none d-sm-inline-flex">Donate</a>
+      <button type="button" id="nav_toggle_btn" class="nav-toggle-btn d-lg-none" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+  <div id="mobile_nav_panel" class="mobile-nav-panel">
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="index.html#funded_section" class="mobile-nav-link">Funded</a>
+    <a href="index.html#to_fund_section" class="mobile-nav-link">To Fund</a>
+    <a href="media.html" class="mobile-nav-link">Media</a>
+    <a href="donate.html" class="mobile-nav-link">Donate</a>
+  </div>
+</nav>
+
+<header class="hero-dark-section">
+  <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop" alt="Donation and giving" class="hero-dark-media">
+  <div class="hero-dark-overlay"></div>
+  <div class="section-container">
+    <p class="eyebrow-label eyebrow-label-light">Donate</p>
+    <h1 class="display-heading hero-dark-title">Every rand shows up.</h1>
+    <p class="hero-dark-copy">100% of your donation goes to funded projects. Overheads are covered separately by our founding donors.</p>
+  </div>
+</header>
+
+<section class="section-block">
+  <div class="section-container">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <h3 class="mb-4">Bank Transfer</h3>
+        <div class="p-4 bg-light rounded">
+          <p class="mb-2"><strong>Bank:</strong> Standard Bank</p>
+          <p class="mb-2"><strong>Account:</strong> Zuko Tisani Youth Foundation NPC</p>
+          <p class="mb-2"><strong>Number:</strong> 000 123 4567</p>
+          <p class="mb-2"><strong>Branch:</strong> 051001</p>
+          <p class="mb-0"><strong>Reference:</strong> Your email address</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="mb-4">Give Online</h3>
+        <div class="p-4 border rounded">
+          <div class="mb-3">
+            <div class="btn-group w-100" role="group">
+              <input type="radio" class="btn-check" name="donation_type" id="once_off" checked>
+              <label class="btn btn-outline-secondary" for="once_off">Once-Off</label>
+              <input type="radio" class="btn-check" name="donation_type" id="monthly">
+              <label class="btn btn-outline-secondary" for="monthly">Monthly</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Amount (ZAR)</label>
+            <div class="d-flex gap-2 mb-2">
+              <button type="button" class="btn btn-outline-secondary flex-fill">R150</button>
+              <button type="button" class="btn btn-outline-secondary flex-fill">R500</button>
+              <button type="button" class="btn btn-outline-secondary flex-fill">R1500</button>
+              <button type="button" class="btn btn-outline-secondary flex-fill">R5000</button>
+            </div>
+            <input type="number" class="form-control" placeholder="Custom Amount">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email (for your 18A cert.)</label>
+            <input type="email" class="form-control">
+          </div>
+          <button class="btn-solid-orange w-100">Donate R500 →</button>
+          <p class="small text-muted mt-3 text-center">Secure checkout via Yoco · Section 18A receipt emailed within 48 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top row gy-4">
+    <div class="col-lg-5">
+      <h2 class="display-heading footer-heading">Back the <span class="text-accent">next</span><br>generation.</h2>
+      <p class="footer-text">The Zuko Tisani Youth Leadership Foundation is a registered non-profit investing in young South African changemakers.</p>
+    </div>
+    <div class="col-lg-3 offset-lg-1">
+      <p class="footer-label">Get Involved</p>
+      <ul class="footer-links list-unstyled">
+        <li><a href="donate.html" class="footer-link">Donate Now</a></li>
+        <li><a href="submit-project.html" class="footer-link">Submit a Project</a></li>
+        <li><a href="tax-certificate.html" class="footer-link">Claim Tax Certificate</a></li>
+        <li><a href="media.html" class="footer-link">Media</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <p class="footer-label">Contact</p>
+      <ul class="footer-links list-unstyled">
+        <li class="footer-link">hello@ztisaniyouth.org</li>
+        <li class="footer-link">www.ztisaniyouth.org</li>
+        <li class="footer-link">NPO Reg. Pending</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container d-flex justify-content-between flex-wrap">
+    <span>&copy; 2026 Zuko Tisani Youth Leadership Foundation. All rights reserved.</span>
+    <span>Section 18A registered &middot; PBO</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
