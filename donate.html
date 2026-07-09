@@ -4,18 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donate — Zuko Tisani Youth Leadership Foundation</title>
-<meta name="description" content="Donate to the Zuko Tisani Youth Leadership Foundation.">
+<meta name="description" content="Every rand shows up. Donate once-off or monthly to the Zuko Tisani Youth Leadership Foundation and receive a Section 18A tax certificate for your gift.">
+<meta name="keywords" content="donate South Africa, youth foundation donation, Section 18A donation, monthly giving, Zuko Tisani donate, PBO tax deductible">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-.hero-dark-section { position: relative; min-height: 300px; display: flex; align-items: center; color: white; overflow: hidden; }
-.hero-dark-media { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.hero-dark-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: -1; }
-.section-container { position: relative; z-index: 1; }
-</style>
 </head>
 <body class="page-body">
 
@@ -32,7 +27,7 @@
       <li><a href="media.html" class="nav-link-item">Media</a></li>
     </ul>
     <div class="d-flex align-items-center gap-3">
-      <a href="donate.html" class="btn-solid-orange d-none d-sm-inline-flex">Donate</a>
+      <a href="donate.html" class="btn-solid-orange d-none d-sm-inline-flex is-active">Donate</a>
       <button type="button" id="nav_toggle_btn" class="nav-toggle-btn d-lg-none" aria-label="Open menu">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -45,65 +40,82 @@
     <a href="index.html#funded_section" class="mobile-nav-link">Funded</a>
     <a href="index.html#to_fund_section" class="mobile-nav-link">To Fund</a>
     <a href="media.html" class="mobile-nav-link">Media</a>
-    <a href="donate.html" class="mobile-nav-link">Donate</a>
+    <a href="donate.html" class="mobile-nav-link is-active">Donate</a>
   </div>
 </nav>
 
-<header class="hero-dark-section">
-  <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop" alt="Donation and giving" class="hero-dark-media">
-  <div class="hero-dark-overlay"></div>
-  <div class="section-container">
-    <p class="eyebrow-label eyebrow-label-light">Donate</p>
-    <h1 class="display-heading hero-dark-title">Every rand shows up.</h1>
-    <p class="hero-dark-copy">100% of your donation goes to funded projects. Overheads are covered separately by our founding donors.</p>
-  </div>
-</header>
-
 <section class="section-block">
-  <div class="section-container">
-    <div class="row g-5">
-      <div class="col-lg-6">
-        <h3 class="mb-4">Bank Transfer</h3>
-        <div class="p-4 bg-light rounded">
-          <p class="mb-2"><strong>Bank:</strong> Standard Bank</p>
-          <p class="mb-2"><strong>Account:</strong> Zuko Tisani Youth Foundation NPC</p>
-          <p class="mb-2"><strong>Number:</strong> 000 123 4567</p>
-          <p class="mb-2"><strong>Branch:</strong> 051001</p>
-          <p class="mb-0"><strong>Reference:</strong> Your email address</p>
-        </div>
+  <div class="section-container row gy-5">
+    <div class="col-lg-6">
+      <p class="eyebrow-label">Donate</p>
+      <h1 class="display-heading donate-hero-title">Every rand <span class="text-accent">shows up.</span></h1>
+      <p class="body-copy mt-3 mb-4 donate-hero-sub">100% of your donation goes to funded projects. Overheads are covered separately by our founding donors.</p>
+
+      <div class="bank-detail-row">
+        <span class="bank-detail-label">Bank</span>
+        <span class="bank-detail-value">Standard Bank</span>
       </div>
-      <div class="col-lg-6">
-        <h3 class="mb-4">Give Online</h3>
-        <div class="p-4 border rounded">
-          <div class="mb-3">
-            <div class="btn-group w-100" role="group">
-              <input type="radio" class="btn-check" name="donation_type" id="once_off" checked>
-              <label class="btn btn-outline-secondary" for="once_off">Once-Off</label>
-              <input type="radio" class="btn-check" name="donation_type" id="monthly">
-              <label class="btn btn-outline-secondary" for="monthly">Monthly</label>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Amount (ZAR)</label>
-            <div class="d-flex gap-2 mb-2">
-              <button type="button" class="btn btn-outline-secondary flex-fill">R150</button>
-              <button type="button" class="btn btn-outline-secondary flex-fill">R500</button>
-              <button type="button" class="btn btn-outline-secondary flex-fill">R1500</button>
-              <button type="button" class="btn btn-outline-secondary flex-fill">R5000</button>
-            </div>
-            <input type="number" class="form-control" placeholder="Custom Amount">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Email (for your 18A cert.)</label>
-            <input type="email" class="form-control">
-          </div>
-          <button class="btn-solid-orange w-100">Donate R500 →</button>
-          <p class="small text-muted mt-3 text-center">Secure checkout via Yoco · Section 18A receipt emailed within 48 hours.</p>
+      <div class="bank-detail-row">
+        <span class="bank-detail-label">Account</span>
+        <span class="bank-detail-value">Zuko Tisani Youth Foundation NPC</span>
+      </div>
+      <div class="bank-detail-row">
+        <span class="bank-detail-label">Number</span>
+        <span class="bank-detail-value">000 123 4567</span>
+      </div>
+      <div class="bank-detail-row">
+        <span class="bank-detail-label">Branch</span>
+        <span class="bank-detail-value">051001</span>
+      </div>
+      <div class="bank-detail-row">
+        <span class="bank-detail-label">Reference</span>
+        <span class="bank-detail-value">Your email address</span>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="form-panel-card" id="donate_form_panel">
+        <p class="form-field-label mb-3">Give Online</p>
+
+        <div class="form-toggle-row">
+          <button type="button" id="toggle_once_off" class="form-toggle-btn is-active">Once-Off</button>
+          <button type="button" id="toggle_monthly" class="form-toggle-btn">Monthly</button>
         </div>
+
+        <form id="donate_form">
+          <div class="amount-grid">
+            <button type="button" class="amount-btn" data-amount="150">R150</button>
+            <button type="button" class="amount-btn is-selected" data-amount="500">R500</button>
+            <button type="button" class="amount-btn" data-amount="1500">R1500</button>
+            <button type="button" class="amount-btn" data-amount="5000">R5000</button>
+          </div>
+
+          <div class="form-field-group">
+            <label for="custom_amount_input" class="form-field-label">Custom Amount (ZAR)</label>
+            <input type="text" id="custom_amount_input" class="form-input-control" placeholder="500">
+          </div>
+
+          <div class="form-field-group">
+            <label for="donor_name_input" class="form-field-label">Full Name</label>
+            <input type="text" id="donor_name_input" class="form-input-control" placeholder="Full name">
+          </div>
+
+          <div class="form-field-group">
+            <label for="donor_email_input" class="form-field-label">Email (for your 18A cert.)</label>
+            <input type="email" id="donor_email_input" class="form-input-control" placeholder="Email address">
+          </div>
+
+          <div id="donate_status_message" class="form-status-message"></div>
+
+          <button type="submit" id="donate_submit_btn" class="btn-solid-orange btn-block-full">Donate R500 &rarr;</button>
+          <p class="form-helper-note">Secure checkout via Yoco &middot; Section 18A receipt emailed within 48 hours.</p>
+        </form>
+      </div>
+
+      <div id="donate_success_panel" class="form-panel-card form-panel-card-hidden text-center">
+        <div class="mandate-icon-badge success-icon-badge mx-auto mb-3">&#10003;</div>
+        <h3 class="display-heading success-title">Donation received!</h3>
+        <p class="body-copy">Thank you for standing with the young South Africans we fund.</p>
       </div>
     </div>
   </div>
@@ -138,6 +150,11 @@
     <span>Section 18A registered &middot; PBO</span>
   </div>
 </footer>
+
+<div id="processing_overlay" class="processing-overlay">
+  <div class="processing-spinner"></div>
+  <p class="processing-label">Redirecting to payment&hellip;</p>
+</div>
 
 <script src="assets/js/main.js"></script>
 </body>
