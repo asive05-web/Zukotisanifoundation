@@ -71,52 +71,58 @@
             <li>• Turnaround: 4 – 6 weeks</li>
           </ul>
         </div>
-        
-        <form action="#" method="POST">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label">Your Full Name</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Age</label>
-              <input type="number" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Project Name</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-12">
-              <label class="form-label">Where Does It Operate?</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Category</label>
-              <select class="form-select">
-                <option>Education</option>
-                <option>Sport</option>
-                <option>Tech</option>
-                <option>Enterprise</option>
-                <option>Arts</option>
-                <option>Community</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Amount Requested (ZAR)</label>
-              <input type="number" class="form-control" required>
-            </div>
-            <div class="col-12">
-              <label class="form-label">Tell Us About the Project (max 300 words)</label>
-              <textarea class="form-control" rows="5" required></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn-solid-orange w-100">Submit Application</button>
-            </div>
+
+        <form id="submit_project_form" class="form-panel-card">
+          <div class="form-field-group">
+            <label for="project_full_name" class="form-field-label">Your Full Name</label>
+            <input type="text" id="project_full_name" class="form-input-control" data-field-label="Full name">
           </div>
+
+          <div class="form-field-group">
+            <label for="project_email" class="form-field-label">Email</label>
+            <input type="email" id="project_email" class="form-input-control" data-field-label="Email">
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_age" class="form-field-label">Age</label>
+            <input type="number" id="project_age" class="form-input-control" data-field-label="Age">
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_name" class="form-field-label">Project Name</label>
+            <input type="text" id="project_name" class="form-input-control" data-field-label="Project name">
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_location" class="form-field-label">Where Does It Operate?</label>
+            <input type="text" id="project_location" class="form-input-control" placeholder="Town, province" data-field-label="Location">
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_category" class="form-field-label">Category</label>
+            <select id="project_category" class="form-input-control form-select-control" data-field-label="Category">
+              <option>Education</option>
+              <option>Sport</option>
+              <option>Tech</option>
+              <option>Enterprise</option>
+              <option>Arts</option>
+              <option>Community</option>
+            </select>
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_amount" class="form-field-label">Amount Requested (ZAR)</label>
+            <input type="text" id="project_amount" class="form-input-control" data-field-label="Amount requested">
+          </div>
+
+          <div class="form-field-group">
+            <label for="project_description" class="form-field-label">Tell Us About the Project (max 300 words)</label>
+            <textarea id="project_description" class="form-input-control form-textarea-control" rows="5" data-field-label="Project description"></textarea>
+          </div>
+
+          <div id="project_status_message" class="form-status-message"></div>
+
+          <button type="submit" id="project_submit_btn" class="btn-solid-orange btn-block-full">Submit Application</button>
         </form>
       </div>
     </div>
@@ -141,7 +147,7 @@
     <div class="col-lg-3">
       <p class="footer-label">Contact</p>
       <ul class="footer-links list-unstyled">
-        <li class="footer-link">hello@ztisaniyouth.org</li>
+        <li class="footer-link">zstisani@gmail.com</li>
         <li class="footer-link">www.ztisaniyouth.org</li>
         <li class="footer-link">NPO Reg. Pending</li>
       </ul>
@@ -153,6 +159,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
